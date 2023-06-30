@@ -28,7 +28,7 @@
    -->
       </header>
       <div class="flexbox">
-      <section class="dados">
+      <form class="dados">
         <label for="nome-titular">
             <span>NOME DO TITULAR</span>
             <input type="text" class="name style-input" id="nome-titular" placeholder="GLEIDSON QUEIROZ" />
@@ -53,16 +53,16 @@
             </label>
             <label for="ano">
               <span class="sr-only">ANO</span
-              ><input type="text" id="ano" class="val-input" maxlength="2" placeholder="AA" />
+              ><input type="number" id="ano" class="val-input" maxlength="2" placeholder="AA" />
             </label>
           </fieldset>
           <label for="cvv">
-            <span>CVV</span><input type="text" id="cvv" class="cvv-input" maxlength="4" placeholder="123" />
+            <span>CVV</span><input type="number" id="cvv" class="cvv-input" maxlength="4" placeholder="123" />
           </label>
         </div>
         <button class="confirm">Comfirme</button>
       </div>
-      </section>
+    </form>
     </div>
   </body>
 </html>

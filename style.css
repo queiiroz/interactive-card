@@ -121,6 +121,10 @@ legend {
   margin-bottom: 12px;
 }
 
+*:focus {
+  outline: none;
+}
+
 fieldset {
   display: flex;
   gap: 5px;
@@ -137,6 +141,13 @@ fieldset {
   font-family: "Space Grotesk", sans-serif;
   font-size: 20px;
   padding-left: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 .val-cvv {
