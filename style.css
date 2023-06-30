@@ -7,13 +7,13 @@
 :root {
   --color-text-card: white;
   --color-text: hsl(278, 68%, 11%);
+  --border-color: rgb(175, 175, 175);
 }
 
 body {
   width: 100vw;
-  font-family: Space Grotesk, sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   color: var(--color-text);
-  border: red solid 1px;
 }
 
 .cards {
@@ -74,7 +74,10 @@ body {
 }
 
 .dados {
-  padding: 100px 20px 10px 20px;
+  padding: 110px 20px 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
 }
 
 .sr-only {
@@ -92,4 +95,62 @@ body {
 .flexbox {
   display: flex;
   flex-direction: column;
+  gap: 5px;
+
+  padding-bottom: 10px;
+}
+
+.style-input {
+  height: 50px;
+  border: var(--border-color) solid 1px;
+  border-radius: 8px;
+}
+
+.val {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+fieldset {
+  width: 40%;
+  border: none;
+  padding-bottom: 10px;
+}
+
+.inputs-val {
+  width: 40%;
+  display: flex;
+  gap: 8px;
+}
+
+.val-input {
+  width: 102px;
+  height: 50px;
+  border: var(--border-color) solid 1px;
+  border-radius: 8px;
+}
+
+.cvc-input {
+  height: 50px;
+
+  border: var(--border-color) solid 1px;
+  border-radius: 8px;
+}
+
+.val-cvc {
+  display: flex;
+  gap: 15px;
+}
+
+.confirm {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  width: 500;
+  width: 374px;
+  height: 60px;
+  border: none;
+  background-color: var(--color-text);
+  border-radius: 8px;
+  color: var(--color-text-card);
 }
