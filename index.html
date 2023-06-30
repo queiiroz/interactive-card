@@ -15,7 +15,7 @@
   </head>
   <body>
     <header class="cards">
-      <div class="back-card"><h4 class="cvc-print">000</h4></div>
+      <div class="back-card"><h4 class="cvv-print">000</h4></div>
       <div class="front-card">
         <div class="number-print">0000 0000 0000 0000</div>
         <div class="number-name">
@@ -34,10 +34,10 @@
       <label for="numero-cartao">
         <div class="flexbox">
           <span>NÚMERO DO CARTÃO</span>
-          <input type="number" class="number-card style-input" id="numero-cartao" />
+          <input type="number" class="number-card style-input" id="numero-cartao" maxlength="19" placeholder="1234 6578 9101 1121"/>
         </div>
       </label>
-      <div class="val-cvc">
+      <div class="val-cvv">
       <fieldset>
         <div class="val">
         <legend>VALIDADE (MM/AA)</legend>
@@ -52,8 +52,8 @@
         </div>
       </fieldset>
      
-        <label for="cvc"> <div class="flexbox">
-          <span>CVC</span><input type="text" id="cvc" class="cvc-input"/> </label>
+        <label for="cvv"> <div class="flexbox">
+          <span>CVV</span><input type="text" id="cvv" class="cvv-input"/> </label>
       </div>
     </div>
       <button class="confirm">Comfirme</button>

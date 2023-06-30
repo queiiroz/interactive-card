@@ -49,7 +49,7 @@ body {
   letter-spacing: 0.1rem;
 }
 
-.cvc-print {
+.cvv-print {
   position: absolute;
   top: 72px;
   left: 230px;
@@ -104,6 +104,10 @@ body {
   height: 50px;
   border: var(--border-color) solid 1px;
   border-radius: 8px;
+
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  padding-left: 10px;
 }
 
 .val {
@@ -125,20 +129,29 @@ fieldset {
 }
 
 .val-input {
-  width: 102px;
+  width: 93.5px;
   height: 50px;
   border: var(--border-color) solid 1px;
   border-radius: 8px;
+
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  padding-left: 10px;
 }
 
-.cvc-input {
+.cvv-input {
+  width: 164px;
   height: 50px;
 
   border: var(--border-color) solid 1px;
   border-radius: 8px;
+
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  padding-left: 10px;
 }
 
-.val-cvc {
+.val-cvv {
   display: flex;
   gap: 15px;
 }
@@ -153,4 +166,12 @@ fieldset {
   background-color: var(--color-text);
   border-radius: 8px;
   color: var(--color-text-card);
+margin-top: 20px;
+  &:hover {
+    background-color: hsl(278, 32%, 22%);
+  }
+
+  &:active {
+    background-color: hsl(278, 68%, 11%);
+  }
 }
