@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="cards">
+    <div class="col">
+      <header class="cards">
+        <!--
       <div class="back-card"><h4 class="cvv-print">000</h4></div>
       <div class="front-card">
         <div class="number-print">0000 0000 0000 0000</div>
@@ -22,41 +24,45 @@
           <div class="name-print">GLEIDSON QUEIROZ</div>
           <div class="date-print">00/00</div>
         </div>
-      </div>
-    </header>
-    <section class="dados">
-      <label for="nome-titular">
-        <div class="flexbox">
-          <span>NOME DO TITULAR</span>
-          <input type="text" class="name style-input" id="nome-titular" />
-        </div>
-      </label>
-      <label for="numero-cartao">
-        <div class="flexbox">
-          <span>NÚMERO DO CARTÃO</span>
-          <input type="number" class="number-card style-input" id="numero-cartao" maxlength="19" placeholder="1234 6578 9101 1121"/>
-        </div>
-      </label>
-      <div class="val-cvv">
-      <fieldset>
-        <div class="val">
-        <legend>VALIDADE (MM/AA)</legend>
-        <div class="inputs-val">
-        <label for="mes"> 
-          <span class="sr-only">MÊS</span> <input type="number" id="mes" class="val-input"/>
+      </div> 
+   -->
+      </header>
+      <div class="flexbox">
+      <section class="dados">
+        <label for="nome-titular">
+            <span>NOME DO TITULAR</span>
+            <input type="text" class="name style-input" id="nome-titular" />
         </label>
-        <label for="ano">
-          <span class="sr-only">ANO</span><input type="text" id="ano" class="val-input"/>
+        <label for="numero-cartao">
+            <span>NÚMERO DO CARTÃO</span>
+            <input
+              type="number"
+              class="number-card style-input"
+              id="numero-cartao"
+              maxlength="19"
+              placeholder="1234 6578 9101 1121"
+            />
         </label>
-      </div>
+        <div class="val-cvv">
+          <fieldset>
+            <legend>VALIDADE (MM/AA)</legend>
+
+            <label for="mes">
+              <span class="sr-only">MÊS</span>
+              <input type="number" id="mes" class="val-input" />
+            </label>
+            <label for="ano">
+              <span class="sr-only">ANO</span
+              ><input type="text" id="ano" class="val-input" />
+            </label>
+          </fieldset>
+          <label for="cvv">
+            <span>CVV</span><input type="text" id="cvv" class="cvv-input" />
+          </label>
         </div>
-      </fieldset>
-     
-        <label for="cvv"> <div class="flexbox">
-          <span>CVV</span><input type="text" id="cvv" class="cvv-input"/> </label>
+        <button class="confirm">Comfirme</button>
       </div>
+      </section>
     </div>
-      <button class="confirm">Comfirme</button>
-    </section>
   </body>
 </html>

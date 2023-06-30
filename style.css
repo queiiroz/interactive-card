@@ -11,9 +11,13 @@
 }
 
 body {
-  width: 100vw;
   font-family: "Space Grotesk", sans-serif;
   color: var(--color-text);
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
 }
 
 .cards {
@@ -70,7 +74,7 @@ body {
   flex-direction: column;
 
   display: flex;
-  gap: 20px;
+  gap: 20đpx;
 }
 
 .dados {
@@ -95,12 +99,17 @@ body {
 .flexbox {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-
   padding-bottom: 10px;
+}
+
+label > span,
+legend {
+  margin-bottom: 6px;
+  display: block;
 }
 
 .style-input {
+  width: 100%;
   height: 50px;
   border: var(--border-color) solid 1px;
   border-radius: 8px;
@@ -108,41 +117,20 @@ body {
   font-family: "Space Grotesk", sans-serif;
   font-size: 20px;
   padding-left: 10px;
-}
 
-.val {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+  margin-bottom: 12px;
 }
 
 fieldset {
-  width: 40%;
-  border: none;
-  padding-bottom: 10px;
-}
-
-.inputs-val {
-  width: 40%;
   display: flex;
-  gap: 8px;
+  gap: 5px;
+
+  border: none;
 }
 
 .val-input {
-  width: 93.5px;
+  width: 100%;
   height: 50px;
-  border: var(--border-color) solid 1px;
-  border-radius: 8px;
-
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 20px;
-  padding-left: 10px;
-}
-
-.cvv-input {
-  width: 164px;
-  height: 50px;
-
   border: var(--border-color) solid 1px;
   border-radius: 8px;
 
@@ -153,25 +141,59 @@ fieldset {
 
 .val-cvv {
   display: flex;
+  align-items: center;
+  gap: 10px;
   gap: 15px;
+}
+
+.cvv-input {
+  width: 100%;
+  height: 50px;
+  border: var(--border-color) solid 1px;
+  border-radius: 8px;
+
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  padding-left: 10px;
 }
 
 .confirm {
   font-family: "Space Grotesk", sans-serif;
   font-size: 20px;
-  width: 500;
-  width: 374px;
   height: 60px;
+  width: 100%;
   border: none;
   background-color: var(--color-text);
   border-radius: 8px;
   color: var(--color-text-card);
-margin-top: 20px;
+  margin-top: 20px;
   &:hover {
     background-color: hsl(278, 32%, 22%);
   }
 
   &:active {
     background-color: hsl(278, 68%, 11%);
+  }
+}
+
+@media (min-width: 768px) {
+  .col {
+    display: flex;
+    flex-direction: row;
+  }
+  .cards {
+    width: 30%;
+    height: 100vh;
+  }
+
+  .dados {
+    max-width: 45%;
+    margin: 0 auto;
+  }
+
+  .flexbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
