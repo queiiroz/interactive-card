@@ -142,7 +142,8 @@ fieldset {
 .val-cvv {
   display: flex;
   align-items: center;
-  gap: 10px;
+
+  margin-top: 30px;
   gap: 15px;
 }
 
@@ -166,7 +167,7 @@ fieldset {
   background-color: var(--color-text);
   border-radius: 8px;
   color: var(--color-text-card);
-  margin-top: 20px;
+  margin-top: 60px;
   &:hover {
     background-color: hsl(278, 32%, 22%);
   }

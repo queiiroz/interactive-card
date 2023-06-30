@@ -31,7 +31,7 @@
       <section class="dados">
         <label for="nome-titular">
             <span>NOME DO TITULAR</span>
-            <input type="text" class="name style-input" id="nome-titular" />
+            <input type="text" class="name style-input" id="nome-titular" placeholder="GLEIDSON QUEIROZ" />
         </label>
         <label for="numero-cartao">
             <span>NÚMERO DO CARTÃO</span>
@@ -49,15 +49,15 @@
 
             <label for="mes">
               <span class="sr-only">MÊS</span>
-              <input type="number" id="mes" class="val-input" />
+              <input type="number" id="mes" class="val-input" maxlength="2" placeholder="MM" />
             </label>
             <label for="ano">
               <span class="sr-only">ANO</span
-              ><input type="text" id="ano" class="val-input" />
+              ><input type="text" id="ano" class="val-input" maxlength="2" placeholder="AA" />
             </label>
           </fieldset>
           <label for="cvv">
-            <span>CVV</span><input type="text" id="cvv" class="cvv-input" />
+            <span>CVV</span><input type="text" id="cvv" class="cvv-input" maxlength="4" placeholder="123" />
           </label>
         </div>
         <button class="confirm">Comfirme</button>
