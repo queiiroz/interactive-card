@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-text: white;
+}
+
+body {
+  font-family: Space Grotesk, sans-serif;
+  color: var(--color-text);
+}
+
+.cards {
+  height: 250px;
+  background-image: url(./assets/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.back-card {
+  width: 310px;
+  height: 170px;
+
+  background-image: url(./assets/bg-card-back.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 40px;
+  left: 80px;
+}
+.number-print {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+.number-name {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  letter-spacing: 0.1rem;
+}
+
+.cvc-print {
+  position: absolute;
+  top: 72px;
+  left: 230px;
+  font-weight: 700;
+}
+
+.front-card {
+  padding: 95px 20px 10px 20px;
+  background-image: url(./assets/bg-card-front.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 310px;
+  height: 170px;
+  position: absolute;
+  top: 140px;
+  right: 90px;
+  display: flex;
+  flex-direction: column;
+
+  display: flex;
+  gap: 20px;
+}
+
+.dados {
+  padding-top: 100px;
+}
