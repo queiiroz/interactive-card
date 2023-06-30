@@ -5,12 +5,15 @@
 }
 
 :root {
-  --color-text: white;
+  --color-text-card: white;
+  --color-text: hsl(278, 68%, 11%);
 }
 
 body {
+  width: 100vw;
   font-family: Space Grotesk, sans-serif;
   color: var(--color-text);
+  border: red solid 1px;
 }
 
 .cards {
@@ -19,6 +22,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  color: var(--color-text-card);
 }
 
 .back-card {
@@ -70,5 +74,22 @@ body {
 }
 
 .dados {
-  padding-top: 100px;
+  padding: 100px 20px 10px 20px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
 }

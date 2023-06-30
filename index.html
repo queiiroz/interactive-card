@@ -25,10 +25,31 @@
       </div>
     </header>
     <section class="dados">
-      <input type="text" class="name" />NOME DO TITULAR
-      <input type="text" class="number-card" />NÚMERO DO CARTÃO
-      <input type="date" />
-      <input type="text" class="cvc" /> CVC
+      <label for="nome-titular">
+        <div class="flexbox">
+          <span>NOME DO TITULAR</span>
+          <input type="text" class="name" id="nome-titular" />
+        </div>
+      </label>
+      <label for="numero-cartao">
+        <div class="flexbox">
+          <span>NÚMERO DO CARTÃO</span>
+          <input type="number" class="number-card" id="numero-cartao" />
+        </div>
+      </label>
+      <fieldset>
+        <legend>VALIDADE (MM/AA)</legend>
+        <label for="mes">
+          <span class="sr-only">MÊS</span> <input type="number" id="mes" />
+        </label>
+        <label for="ano">
+          <span class="sr-only">ANO</span><input type="text" id="ano" />
+        </label>
+      </fieldset>
+     
+        <label for="cvc"> <div class="flexbox">
+          <span>CVC</span><input type="text" id="cvc" /> </label>
+      </div>
       <button class="confirm">Comfirme</button>
     </section>
   </body>
