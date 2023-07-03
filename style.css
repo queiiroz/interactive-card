@@ -251,8 +251,60 @@ input::-webkit-inner-spin-button {
     left: 80px;
   }
 
+  .number-print {
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+
+    letter-spacing: 0.1rem;
+    z-index: 2;
+  }
+
+  .name-print {
+    font-size: 0.75rem;
+    font-weight: 500;
+    position: absolute;
+    top: 280px;
+    left: 100px;
+
+    letter-spacing: 0.1rem;
+    z-index: 2;
+  }
+
+  .val-print {
+    font-size: 0.75rem;
+    font-weight: 500;
+    position: absolute;
+    top: 280px;
+    left: 420px;
+
+    letter-spacing: 0.1rem;
+    z-index: 2;
+  }
+
+  .cvv-print {
+    font-size: 1rem;
+    font-weight: 500;
+    position: absolute;
+    top: 448px;
+    left: 450px;
+
+    letter-spacing: 0.1rem;
+    z-index: 2;
+  }
+
+  .logo-card {
+    width: 70px;
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    z-index: 2;
+  }
+
   .dados {
-    max-width: 45%;
+    max-width: 40%;
     margin: 0 auto;
   }
 
