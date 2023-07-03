@@ -225,7 +225,7 @@ input::-webkit-inner-spin-button {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .col {
     display: flex;
     flex-direction: row;
@@ -278,7 +278,7 @@ input::-webkit-inner-spin-button {
     font-weight: 500;
     position: absolute;
     top: 280px;
-    left: 420px;
+    left: 30vw;
 
     letter-spacing: 0.1rem;
     z-index: 2;
@@ -289,7 +289,7 @@ input::-webkit-inner-spin-button {
     font-weight: 500;
     position: absolute;
     top: 448px;
-    left: 450px;
+    left: 32vw;
 
     letter-spacing: 0.1rem;
     z-index: 2;
