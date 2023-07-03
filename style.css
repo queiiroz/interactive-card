@@ -20,7 +20,8 @@ body {
   flex-direction: column;
 }
 
-.cards {
+header {
+  width: 100vw;
   height: 250px;
   background-image: url(./assets/bg-main-mobile.png);
   background-repeat: no-repeat;
@@ -29,52 +30,29 @@ body {
   color: var(--color-text-card);
 }
 
+.cards {
+  position: relative;
+}
+
 .back-card {
-  width: 310px;
-  height: 170px;
-
-  background-image: url(./assets/bg-card-back.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+  width: 250px;
+  height: 150px;
+  image-rendering: auto;
   position: absolute;
-  top: 40px;
-  left: 80px;
-}
-.number-print {
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 0.2rem;
-}
-.number-name {
-  font-size: 12px;
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  letter-spacing: 0.1rem;
-}
-
-.cvv-print {
-  position: absolute;
-  top: 72px;
-  left: 230px;
-  font-weight: 700;
+  top: 30px;
+  left: 90px;
+  z-index: 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .front-card {
-  padding: 95px 20px 10px 20px;
-  background-image: url(./assets/bg-card-front.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 310px;
-  height: 170px;
+  width: 250px;
+  height: 150px;
   position: absolute;
-  top: 140px;
+  top: 130px;
   right: 90px;
-  display: flex;
-  flex-direction: column;
-
-  display: flex;
-  gap: 20đpx;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .dados {
@@ -193,9 +171,25 @@ input::-webkit-inner-spin-button {
     display: flex;
     flex-direction: row;
   }
-  .cards {
-    width: 30%;
+  header {
+    width: 40%;
     height: 100vh;
+  }
+
+  .back-card {
+    width: 100%;
+    height: 220px;
+    position: absolute;
+    top: 350px;
+    left: 150px;
+  }
+
+  .front-card {
+    width: 100%;
+    height: 220px;
+    position: absolute;
+    top: 100px;
+    left: 80px;
   }
 
   .dados {
