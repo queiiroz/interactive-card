@@ -34,10 +34,13 @@ header {
   position: relative;
 }
 
+.cards img {
+  border-radius: 10px;
+}
+
 .back-card {
   width: 250px;
   height: 150px;
-  image-rendering: auto;
   position: absolute;
   top: 30px;
   left: 90px;
@@ -50,9 +53,65 @@ header {
   height: 150px;
   position: absolute;
   top: 130px;
-  right: 90px;
+  left: 40px;
   z-index: 1;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.print {
+  position: relative;
+}
+
+.number-print {
+  font-size: 0.9rem;
+  font-weight: 500;
+  position: absolute;
+  top: 200px;
+  left: 55px;
+
+  letter-spacing: 0.2rem;
+  z-index: 2;
+}
+
+.name-print {
+  font-size: 0.5rem;
+  font-weight: 500;
+  position: absolute;
+  top: 250px;
+  left: 55px;
+
+  letter-spacing: 0.1rem;
+  z-index: 2;
+}
+
+.val-print {
+  font-size: 0.5rem;
+  font-weight: 500;
+  position: absolute;
+  top: 250px;
+  left: 240px;
+
+  letter-spacing: 0.1rem;
+  z-index: 2;
+}
+
+.cvv-print {
+  font-size: 0.75rem;
+  font-weight: 500;
+  position: absolute;
+  top: 96px;
+  left: 280px;
+
+  letter-spacing: 0.1rem;
+  z-index: 2;
+}
+
+.logo-card {
+  width: 50px;
+  position: absolute;
+  top: 150px;
+  left: 55px;
+  z-index: 2;
 }
 
 .dados {
